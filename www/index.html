@@ -32,21 +32,20 @@
 			<h1>TwojaForma!</h1>
 		  </div>
 		  <div data-role="main" class="ui-content">
-			<a href="#pageTrening" class="ui-btn ui-btn-corner ui-corner-all ui-shadow">Plan Treningu</a>
-			<a href="#pageAktywnosc" class="ui-btn ui-btn-corner ui-corner-all ui-shadow">Aktywnosci</a>
-			<a href="#pagePosilki" class="ui-btn ui-btn-corner ui-corner-all ui-shadow" onclick="deviceInfo()">Przypomnienie o posiłkach</a>
-			<a href="#pagePostepy" class="ui-btn ui-btn-corner ui-corner-all ui-shadow" onclick="deviceInfo()">Postępy</a>	
-			<a href="#popupCloseRight" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-corner">Autorzy</a>
-			<div data-role="popup" id="popupCloseRight" class="ui-content" style="max-width:280px">
-				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-				<p>Autorzy aplikacji: </p>
-				<p>Mateusz Dziedzina nr. albumu 9850 student zaoczny informatyki na WSEI</p>
-				<p>Marcin Feliks nr. albumu 9851 student zaoczny informatyki na WSEI</p>
-			</div>					
+    		<div id="logo"><img src="images/logo.png" alt=""></div>
+            <div data-role="controlgroup" data-type="vertical">
+        		<a href="#treningPlan" data-role="button">Plan Treningu</a>
+        		<a href="#activity" data-role="button">Aktywności</a>
+        		<a href="#foods" data-role="button">Posiłki</a>
+                <a href="#progress" data-role="button">Postępy</a>
+
+            </div>				
 		  </div>
-		  <div data-role="footer" data-position="fixed">
-			<h1>(c) Mateusz Dziedzina & Marcin Feliks</h1>
-		  </div> 
+        <div data-role="footer" data-position="fixed">
+        	<div data-role="content">
+            	<p><a href="#authorInfo" data-icon="info" data-role="button" class="ui-btn-left" data-rel="dialog" data-theme="b">Informacje o autorach</a></p>
+            </div>
+        </div>
 		</div> 				
 		
 		<!-- My app aktywnosci page -->

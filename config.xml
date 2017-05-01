@@ -6,10 +6,13 @@
 
     <name>TwojaForma</name>
     <description>My first mobile to control your body</description>
-    <author href="" email="marcin.feliks91@gmail.com">
-		Marcin Feliks, Mateusz Dziedzina
-		
+    <author href="mateuszdziedzina.com" email="mateusz.dziedzina1@gmail.com">
+		Mateusz Dziedzina
 	</author>
+	 <author href="marcin.feliks.com" email="marcin.feliks91@gmail.com">
+		Marcin Feliks
+	</author>
+	<icon src="ikona.png" />
 	<platform name="android" />
 	
 	<plugin name="cordova-plugin-device" spec="~1.1.4" />
