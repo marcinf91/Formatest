@@ -4,6 +4,8 @@
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 		
 		<script src="cordova.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/sk.min.css">
 		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
 		<script src="js/jquery-2.1.4.min.js"></script>
 		<script src="js/jquery.mobile-1.4.5.min.js"></script>
@@ -188,21 +190,23 @@
                 </ul>
             </div>
         </div>
-		</div> 			
+		</div> 				
 		
-		
-		
-		
-		
-		<!-- Mobile device details page -->
-		<div data-role="page" id="details" data-dialog="true">
-			<div data-role="header" data-theme="a">
-				<h1>It's me</h1>
-			</div>
-			<div role="main" class="ui-content">
-				<p id="deviceDetails">Place for device details ...</p>
-			</div>
-		</div>		
+    <!--  Informacje o autorach  -->
+    
+    <div id="authorInfo" data-role="page" data-title="Autorzy"><!-- unstawienia intro poczatek -->
+    	<div data-role="header">
+        	<h1>Autorzy</h1>
+        </div>
+        <div data-role="content">
+        	
+        	<p>Mateusz Dziedzina</p>
+			<p>Marcin Feliks</p>
+
+            <a href="#pageMain" data-role="button">Koniec</a>
+        </div>
+        
+    </div>
 		
 	</body>
 </html>
