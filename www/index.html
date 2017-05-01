@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		
+		<script src="cordova.js"></script>
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<script src="js/pgb.js"></script>
+		<script type="text/javascript">
+			function odczytanie(wartosc) {
+				window.alert(wartosc+ " spalone kalorie w ciagu godziny");
+			}
+			
+			
+			function wyswietl_prompt(){
+			var i=0;
+				var liczbaPosilkow=prompt("Podaj ile posiłków chcesz zjeść:","...")
+				document.getElementById("msg").innerHTML="Wybrałeś, " + liczbaPosilkow + " posiłków na dzień."
+				
+			}
+			
+			
+		</script>
+	</head>
+	<body onload="init()">
+	
+		<!-- My app main page -->
+		<div data-role="page" id="pageMain">
+		  <div data-role="header">
+			<h1>TwojaForma!</h1>
+		  </div>
+		  <div data-role="main" class="ui-content">
+			<a href="#pageTrening" class="ui-btn ui-btn-corner ui-corner-all ui-shadow">Plan Treningu</a>
+			<a href="#pageAktywnosc" class="ui-btn ui-btn-corner ui-corner-all ui-shadow">Aktywnosci</a>
+			<a href="#pagePosilki" class="ui-btn ui-btn-corner ui-corner-all ui-shadow" onclick="deviceInfo()">Przypomnienie o posiłkach</a>
+			<a href="#pagePostepy" class="ui-btn ui-btn-corner ui-corner-all ui-shadow" onclick="deviceInfo()">Postępy</a>	
+			<a href="#popupCloseRight" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-corner">Autorzy</a>
+			<div data-role="popup" id="popupCloseRight" class="ui-content" style="max-width:280px">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+				<p>Autorzy aplikacji: </p>
+				<p>Mateusz Dziedzina nr. albumu 9850 student zaoczny informatyki na WSEI</p>
+				<p>Marcin Feliks nr. albumu 9851 student zaoczny informatyki na WSEI</p>
+			</div>					
+		  </div>
+		  <div data-role="footer" data-position="fixed">
+			<h1>(c) Mateusz Dziedzina & Marcin Feliks</h1>
+		  </div> 
+		</div> 				
+		
+		<!-- My app aktywnosci page -->
+		<div data-role="page" id="pageAktywnosc">
+		  <div data-role="header">
+			<h1>Aktywnosci!</h1>
+				<a href="#pageMain" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-carat-l">Powrót</a>
+		  </div>
+		  <div data-role="main" class="ui-content">	
+			<select name="aktywnosc" onchange="odczytanie(this.value);">
+				<option value="-">wybierz aktywnosc</option>
+				<option value="1260">bieganie</option>
+				<option value="722">jazda na rowerze</option>
+				<option value="294">chodzenie</option>
+				<option value="588">trening na silowni</option>
+				<option value="588">jazda na rolkach</option>
+				<option value="688">skoki na skakance</option>
+				<option value="588">plywanie</option>
+				<option value="756">pilka nozna</option>
+				<option value="672">koszykowka</option>
+				
+			</select>	
+		  </div>
+		  <div data-role="footer" data-position="fixed">
+			<h1>(c) Mateusz Dziedzina & Marcin Feliks</h1>
+		  </div> 
+		</div> 
+		
+		<!-- My app Plan Treningu page -->
+		<div data-role="page" id="pageTrening">
+		  <div data-role="header">
+			<h1>Plan Treningu!</h1>
+				<a href="#pageMain" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-carat-l">Powrót</a>
+		  </div>
+		  <div data-role="main" class="ui-content">	
+
+		  
+		  
+		  </div>
+		  <div data-role="footer" data-position="fixed">
+			<h1>(c) Mateusz Dziedzina & Marcin Feliks</h1>
+		  </div> 
+		</div> 		
+		
+		<!-- My app Przypomnienie posilkow page -->
+		<div data-role="page" id="pagePosilki">
+		  <div data-role="header">
+			<h1>Przypomnienie o posilkach!</h1>
+				<a href="#pageMain" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-carat-l">Powrót</a>
+		  </div>
+		  <div data-role="main" class="ui-content">	
+
+			<input type="button" onclick="wyswietl_prompt()" value="Ilość posiłków" />
+			<br /><br />
+			<div id="msg"></div>
+		  
+		  
+		  </div>
+		  <div data-role="footer" data-position="fixed">
+			<h1>(c) Mateusz Dziedzina & Marcin Feliks</h1>
+		  </div> 
+		</div> 		
+		
+		<!-- My app Postepy page -->
+		<div data-role="page" id="pagePostepy">
+		  <div data-role="header">
+			<h1>Postep!</h1>
+				<a href="#pageMain" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-carat-l">Powrót</a>
+		  </div>
+		  <div data-role="main" class="ui-content">	
+
+		  
+		  
+		  </div>
+		  <div data-role="footer" data-position="fixed">
+			<h1>(c) Mateusz Dziedzina & Marcin Feliks</h1>
+		  </div> 
+		</div> 			
+		
+		
+		
+		
+		
+		<!-- Mobile device details page -->
+		<div data-role="page" id="details" data-dialog="true">
+			<div data-role="header" data-theme="a">
+				<h1>It's me</h1>
+			</div>
+			<div role="main" class="ui-content">
+				<p id="deviceDetails">Place for device details ...</p>
+			</div>
+		</div>		
+		
+	</body>
+</html>
