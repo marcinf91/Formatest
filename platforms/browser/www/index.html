@@ -9,11 +9,12 @@
 		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
 		<script src="js/jquery-2.1.4.min.js"></script>
 		<script src="js/jquery.mobile-1.4.5.min.js"></script>
-		<script src="js/pgb.js"></script>
-		<script type="text/javascript"></script>	
+		<script src="js/my-app.js"></script>
+		<script src="js/script.js"></script>
+		<script type="text/javascript"></script>
 		
 	</head>
-	<body onload="init()">
+	<body>
 	
 		<!-- My app main page -->
 		<div data-role="page" id="pageMain">
@@ -25,7 +26,7 @@
 			<div data-role="controlgroup" data-type="vertical">
         		<a href="#treningPlan" data-role="button">Plan Treningu</a>
         		<a href="#activity" data-role="button">Aktywności</a>
-        		<a href="#foods" data-role="button">Przykładowe diety</a>
+        		<a href="#foods" data-role="button">Przykładowa dieta</a>
                 <a href="#progress" data-role="button">Postępy</a>
             </div>				
 		  </div>
@@ -80,22 +81,22 @@
                 	<tr>
                         <td>1-7</td>
                         <td>40</td>
-                        <td></td>
+                        <td>432</td>
                     </tr>
                     <tr>
                         <td>8-14</td>
                         <td>50</td>
-                        <td></td>
+                        <td>540</td>
                     </tr>
                     <tr>
                         <td>15-21</td>
                         <td>60</td>
-                        <td></td>
+                        <td>648</td>
                     </tr>
                     <tr>
                         <td>22-30</td>
                         <td>70</td>
-                        <td></td>
+                        <td>756</td>
                     </tr>
                 </tbody>
             </table>  
@@ -120,22 +121,22 @@
                 	<tr>
                         <td>1-7</td>
                         <td>60</td>
-                        <td></td>
+                        <td>792</td>
                     </tr>
                     <tr>
                         <td>8-14</td>
                         <td>90</td>
-                        <td></td>
+                        <td>1188</td>
                     </tr>
                     <tr>
                         <td>15-21</td>
                         <td>120</td>
-                        <td></td>
+                        <td>1584</td>
                     </tr>
                     <tr>
                         <td>22-30</td>
                         <td>150</td>
-                        <td></td>
+                        <td>1980</td>
                     </tr>
                 </tbody>
             </table>
@@ -166,22 +167,22 @@
                 	<tr>
                         <td>1-7</td>
                         <td>45</td>
-                        <td></td>
+                        <td>342</td>
                     </tr>
                     <tr>
                         <td>8-14</td>
                         <td>60</td>
-                        <td></td>
+                        <td>456</td>
                     </tr>
                     <tr>
                         <td>15-21</td>
                         <td>75</td>
-                        <td></td>
+                        <td>570</td>
                     </tr>
                     <tr>
                         <td>22-30</td>
                         <td>90</td>
-                        <td></td>
+                        <td>684</td>
                     </tr>
                 </tbody>
             </table>
@@ -207,23 +208,6 @@
 				<a href="#brzuch" data-role="button">Brzuch</a>	 			
 
             </div>	
-			
-			
-			
-			
-		
-			
-			
-			
-			
-			
-			
-
-
-
-
-
-	
 		  </div>
 		</div> 	
 		<!-- Wytrzymałościowy -->
@@ -371,7 +355,7 @@
 		<div data-role="page" id="klatka">
 		  <div data-role="header">
 		  <h1>Siłowy</h1>
-			<a href="#pageMain" data-icon="home" data-iconpos="notext" data-theme="b">Start</a>
+			<a href="#strength" data-icon="arrow-l" data-iconpos="notext" data-theme="b">Start</a>
 		  </div>
 			<div data-role="main" class="ui-content">	
 				<table data-role="table" data-mode="columntoggle" id="chestTrening" class="ui-responsive table-stripe ui-table" data-column-btn-text="Wybierz kolumny">
@@ -442,7 +426,7 @@
 		<div data-role="page" id="ramiona">
 		  <div data-role="header">
 		  <h1>Siłowy</h1>
-			<a href="#pageMain" data-icon="home" data-iconpos="notext" data-theme="b">Start</a>
+			<a href="#strength" data-icon="arrow-l" data-iconpos="notext" data-theme="b">Start</a>
 		  </div>
 			<div data-role="main" class="ui-content">
 <table data-role="table" data-mode="columntoggle" id="armsTrening" class="ui-responsive table-stripe ui-table" data-column-btn-text="Wybierz kolumny">
@@ -502,14 +486,13 @@
                 </tbody>
             </table>			
 
-		
 			</div>
 		</div>
 		<!--nogi -->
 		<div data-role="page" id="nogi">
 		  <div data-role="header">
 		  <h1>Siłowy</h1>
-			<a href="#pageMain" data-icon="home" data-iconpos="notext" data-theme="b">Start</a>
+			<a href="#strength" data-icon="arrow-l" data-iconpos="notext" data-theme="b">Start</a>
 		  </div>
 			<div data-role="main" class="ui-content">	
 					  	<table data-role="table" data-mode="columntoggle" id="legsTrening" class="ui-responsive table-stripe ui-table" data-column-btn-text="Wybierz kolumny">
@@ -559,7 +542,7 @@
 		<div data-role="page" id="plecy">
 		  <div data-role="header">
 		  <h1>Siłowy</h1>
-			<a href="#pageMain" data-icon="home" data-iconpos="notext" data-theme="b">Start</a>
+			<a href="#strength" data-icon="arrow-l" data-iconpos="notext" data-theme="b">Start</a>
 		  </div>
 			<div data-role="main" class="ui-content">	
 			<table data-role="table" data-mode="columntoggle" id="backTrening" class="ui-responsive table-stripe ui-table" data-column-btn-text="Wybierz kolumny">
@@ -609,7 +592,7 @@
 		<div data-role="page" id="brzuch">
 		  <div data-role="header">
 		  <h1>Siłowy</h1>
-			<a href="#pageMain" data-icon="home" data-iconpos="notext" data-theme="b">Start</a>
+			<a href="#strength" data-icon="arrow-l" data-iconpos="notext" data-theme="b">Start</a>
 		  </div>
 			<div data-role="main" class="ui-content">
 			<table data-role="table" data-mode="columntoggle" id="stomachTrening" class="ui-responsive table-stripe ui-table" data-column-btn-text="Wybierz kolumny">
@@ -672,39 +655,82 @@
                 	<tr>
                     	<td>1</td>
                         <td>Jazda na rolkach</td>
-                        <td>588</td>
+                        <td>456</td>
                         <td>Kardio</td>
                     </tr>
                     <tr>
                     	<td>2</td>
-                        <td>Bieg interwałowy</td>
-                        <td>1560</td>
+                        <td>Bieg(wolno-7,5km/h)</td>
+                        <td>648</td>
                         <td>Kardio</td>
                     </tr>
                     <tr>
                     	<td>3</td>
-                        <td>Bieg normalny</td>
-                        <td>1260</td>
+                        <td>Bieg(szybko-12km/h)</td>
+                        <td>960</td>
                         <td>Wytrzymałościowy</td>
                     </tr>
                     <tr>
                     	<td>4</td>
-                        <td>Trucht</td>
-                        <td>672</td>
-                        <td>Kardio</td>
+                        <td>Spacer</td>
+                        <td>280</td>
+                        <td>rekreacyjny</td>
                     </tr>
                     <tr>
                     	<td>5</td>
-                        <td>Siłownia</td>
-                        <td>588</td>
+                        <td>Jazda na rowerze(rekreacyjnie)</td>
+                        <td>520</td>
                         <td>Siłowy</td>
                     </tr>
                     <tr>
                     	<td>6</td>
-                        <td>Skakanka</td>
-                        <td>688</td>
+                        <td>Jazda na rowerze(20km/h)</td>
+                        <td>792</td>
                         <td>Wytrzymałościowy</td>
                     </tr>
+                    <tr>
+                    	<td>7</td>
+                        <td>Koszykówka</td>
+                        <td>672</td>
+                        <td>Wytrzymałościowy</td>
+                    </tr>	
+                    <tr>
+                    	<td>8</td>
+                        <td>Kręgle</td>
+                        <td>272</td>
+                        <td>rekreacyjny</td>
+                    </tr>	
+                    <tr>
+                    	<td>9</td>
+                        <td>Siatkówka</td>
+                        <td>296</td>
+                        <td>rekreacyjny</td>
+                    </tr>	
+					<tr>
+                    	<td>10</td>
+                        <td>Skakanka</td>
+                        <td>656</td>
+                        <td>rekreacyjny</td>
+                    </tr>
+                    <tr>
+                    	<td>10</td>
+                        <td>Chodzenie po górach</td>
+                        <td>296</td>
+                        <td>Wytrzymałościowy</td>
+                    </tr>	
+                    <tr>
+                    	<td>11</td>
+                        <td>Wchodzenie po schodzach</td>
+                        <td>960</td>
+                        <td>rekreacyjny</td>
+                    </tr>	
+                    <tr>
+                    	<td>12</td>
+                        <td>Taniec</td>
+                        <td>672</td>
+                        <td>rekreacyjny</td>
+                    </tr>						
+					
                 </tbody>
             </table>
 		  </div>
@@ -725,28 +751,388 @@
 		<!-- My app Przypomnienie posilkow page -->
 		<div data-role="page" id="foods">
 		  <div data-role="header">
-			<h1>Przykładowe diety</h1>
-				<a href="#pageMain" data-icon="home" data-iconpos="notext" data-theme="b">Start</a>
+		  <h1>Dieta 2200kcal</h1>
+			<a href="#pageMain" data-icon="home" data-iconpos="notext" data-theme="b">Start</a>
+		  </div>
+		<div data-role="main" class="ui-content">	
+		    <div data-role="controlgroup" data-type="vertical">
+        		<a href="#sniadanie" data-role="button">7:00 Posiłek I</a>
+				<a href="#sniadanie2" data-role="button">10:00 Posiłek II</a>
+				<a href="#obiad" data-role="button">13:00 Posiłek III</a>
+				<a href="#podwieczorek" data-role="button">16:00 Posiłek IV</a>
+				<a href="#kolacja" data-role="button">19:00 Posiłek V</a>
+			</div>
+		</div>
+		</div>
+		<div data-role="page" id="sniadanie">
+		  <div data-role="header">
+			<h1>Śniadanie I</h1>
+				<a href="#foods" data-icon="arrow-l" data-iconpos="notext" data-theme="b">Start</a>
+				<p>Sposób przygotowania: Pomidora sparzyć, obrać ze skórki. Ogórka obrać i razem z pomidorem drobno pokroić. Ser rozdrobnić widelcem, dodać jogurt,pokrojone warzywa, posiekany koperek i przyprawy.
+				Wszystko wymieszać. Podawać z pieczywem. Łyżeczkę oleju spożyć po posiłku.</p>
 		  </div>
 		  <div data-role="main" class="ui-content">	
+		  <table data-role="table" data-mode="columntoggle" id="pricestable" class="ui-responsive table-stripe ui-table" data-column-btn-text="Wybierz kolumny">
+						<tr>
+						<th data-priority="1">07:00 Posiłek I</th>
+                        <th data-priority="1">Gramy</th>
+                        <th data-priority="2">Sztuki</th>
+       				</tr>
+     			</thead>
+                <tbody>
+                	<tr>
+                        <td>Bułka grahamka</td>
+                        <td>70 g</td>
+                        <td>1 sztuka</td>
 
-			<input type="button" onclick="wyswietl_prompt()" value="Ilość posiłków" />
-			<br /><br />
-			<div id="msg"></div>
-		  
-		  
+                    </tr>
+                    <tr>
+                        <td>Masło</td>
+                        <td>10g</td>
+                        <td>2 łyżeczki</td>
+					</tr>
+					<tr>
+                        <td>Sałata</td>
+                        <td>10g</td>
+                        <td>2 liście</td>
+					</tr>
+					<tr>
+                        <td>Szynka kanapkowa</td>
+                        <td>40g</td>
+                        <td>2 duże plastry</td>
+					</tr>
+					<tr>
+                        <td>Pomidor</td>
+                        <td>60g</td>
+                        <td>1 sztuka</td>
+					</tr>
+					<tr>
+                        <td>Ananas</td>
+                        <td>60g</td>
+                        <td>2 plastry</td>
+					</tr>
+					<tr>
+                        <td>Banan</td>
+                        <td>70g</td>
+                        <td>1/2 łyżeczki</td>
+					</tr>
+					<tr>
+                        <td>Śliwki</td>
+                        <td>40g</td>
+                        <td>2 sztuki</td>
+					</tr>
+					<tr>
+                        <td>Jogurt naturalny 20%</td>
+                        <td>40g</td>
+                        <td>2 łyżeczki</td>
+					</tr>
+					<tr>
+                        <td>Sok z cytryny</td>
+                        <td>5g</td>
+                        <td>1 łyżeczka</td>
+					</tr>
+					<tr>
+                        <td>Miód</td>
+                        <td>5g</td>
+                        <td>1 łyżeczka</td>
+					</tr>
+					<tr>
+                        <td>Otręby owsiane</td>
+                        <td>20g</td>
+                        <td>2 łyżki</td>
+					</tr>
+					<tr>
+                        <td>Przyprawa chili</td>
+                        <td>1g</td>
+                        <td>szczypta</td>
+					</tr>
+				</table>
+						
+						
+			</div>			
 		  </div>
-        <div data-role="footer" data-position="fixed">
-        	<div data-role="navbar">
-            	<ul>
-                	<li><a href="#treningPlan"  data-theme="b">Plan Treningu</a></li>
-                    <li><a href="#activity"  	data-theme="b">Aktywności</a></li>
-                    <li><a href="#foods" 		data-theme="b">Przykładowe diety</a></li>
-                    <li><a href="#progress"  	data-theme="b">Postępy</a></li>
-                </ul>
-            </div>
-        </div>
-		</div> 		
+		  
+		  <div data-role="page" id="sniadanie2">
+		  <div data-role="header">
+			<h1>Śniadanie II</h1>
+				<a href="#foods" data-icon="arrow-l" data-iconpos="notext" data-theme="b">Start</a>
+				Sposób przygotowania: Mięso umyć, osuszyć i lekko rozbić. Oprószyć solą i pieprzem. Do środka włożyć plaster suszonego pomidora i ser, dobrze zwinąć i spiąć wykałaczkami lub związać nitką.
+				Na oliwie obsmażyć mięso ze wszystkich stron, podlać wodą i dusić około 15 minut. 
+				Podawać z ryżem i surówką. Ryż ugotować według przepisu na opakowaniu. Pora umyć i pokroić w talarki. Marchew i jabłko zetrzeć na tarce o dużych oczkach. Dodać jogurt i przyprawy i wszystko wymieszać.
+		  </div>
+		  <div data-role="main" class="ui-content">	
+		  <table data-role="table" data-mode="columntoggle" id="pricestable" class="ui-responsive table-stripe ui-table" data-column-btn-text="Wybierz kolumny">
+						<tr>
+						<th data-priority="1">10:00 Posiłek II</th>
+                        <th data-priority="1">Gramy</th>
+                        <th data-priority="2">Sztuki</th>
+       				</tr>
+     			</thead>
+                <tbody>
+                	<tr>
+                        <td>Ser twarogowy półtłusty</td>
+                        <td>60 g</td>
+                        <td>3 plastry</td>
+                    </tr>
+                    <tr>
+                        <td>Jogurt naturalny 2%</td>
+                        <td>40g</td>
+                        <td>2 płaskie łyżki</td>
+					</tr>
+					<tr>
+                        <td>Pomidor</td>
+                        <td>160g</td>
+                        <td>1 średnia sztuka</td>
+					</tr>
+					<tr>
+                        <td>Ogórek</td>
+                        <td>80g</td>
+                        <td>1 mała sztuka</td>
+					</tr>
+					<tr>
+                        <td>Koper</td>
+                        <td>6g</td>
+                        <td>1 łyżka</td>
+					</tr>
+					<tr>
+                        <td>Pieprz czarny mielony</td>
+                        <td>1g</td>
+                        <td>szczypta</td>
+					</tr>
+					<tr>
+                        <td>Sól</td>
+                        <td>2g</td>
+                        <td>szczypta</td>
+					</tr>
+					<tr>
+                        <td>Chleb chrupki</td>
+                        <td>30g</td>
+                        <td>3 kromki</td>
+					</tr>
+					<tr>
+                        <td>Olej lniany</td>
+                        <td>5g</td>
+                        <td>1 płaska łyżeczka</td>
+					</tr>
+					<tr>
+                        <td>Jabłko</td>
+                        <td>160g</td>
+                        <td>1 sztuka</td>
+					</tr>
+				</table>		
+		  </div>
+		  </div>
+		  <div data-role="page" id="obiad">
+		  <div data-role="header">
+			<h1>Obiad</h1>
+				<a href="#foods" data-icon="arrow-l" data-iconpos="notext" data-theme="b">Start</a>
+				<p>Sposób przygotowania: Mięso umyć, osuszyć i lekko rozbić. Oprószyć solą i pieprzem. Do środka włożyć plaster suszonego pomidora i ser, dobrze zwinąć i spiąć wykałaczkami lub związać nitką.
+				Na oliwie obsmażyć mięso ze wszystkich stron, podlać wodą i dusić około 15 minut. Podawać z ryżem i surówką.
+				Ryż ugotować według przepisu na opakowaniu. Pora umyć i pokroić w talarki. Marchew i jabłko zetrzeć na tarce o dużych oczkach. Dodać jogurt i przyprawy i wszystko wymieszać.</p>
+		  </div>
+		  <div data-role="main" class="ui-content">	
+		  <table data-role="table" data-mode="columntoggle" id="pricestable" class="ui-responsive table-stripe ui-table" data-column-btn-text="Wybierz kolumny">
+						<tr>
+						<th data-priority="1">13:00 Posiłek III</th>
+                        <th data-priority="1">Gramy</th>
+                        <th data-priority="2">Sztuki</th>
+       				</tr>
+     			</thead>
+                <tbody>
+                	<tr>
+                        <td>Kurczak filet</td>
+                        <td>110 g</td>
+                        <td>1/2 sztuki</td>
+                    </tr>
+                    <tr>
+                        <td>Pomidory suszone</td>
+                        <td>5g</td>
+                        <td>1 plaster</td>
+					</tr>
+					<tr>
+                        <td>Ser Feta</td>
+                        <td>10g</td>
+                        <td>1 kawałek</td>
+					</tr>
+					<tr>
+                        <td>Ryż brązowy</td>
+                        <td>75g</td>
+                        <td>3/4 woreczka</td>
+					</tr>
+					<tr>
+                        <td>Por</td>
+                        <td>50g</td>
+                        <td>1 sztuka</td>
+					</tr>
+					<tr>
+                        <td>Pieprz czarny mielony</td>
+                        <td>2g</td>
+                        <td>szczypta</td>
+					</tr>
+					<tr>
+                        <td>Sól</td>
+                        <td>2g</td>
+                        <td>szczypta</td>
+					</tr>
+					<tr>
+                        <td>Marchew</td>
+                        <td>50g</td>
+                        <td>3 kromki</td>
+					</tr>
+					<tr>
+                        <td>Jabłko</td>
+                        <td>80g</td>
+                        <td>1/2 sztuki</td>
+					</tr>
+					<tr>
+                        <td>Jogurt naturalny 2%</td>
+                        <td>25g</td>
+                        <td>1 łyżka</td>
+					</tr>
+					<tr>
+                        <td>Oliwa z oliwek</td>
+                        <td>10g</td>
+                        <td>1 łyżeczka</td>
+					</tr>
+				</table>		
+		  </div>
+		  </div>
+		  <div data-role="page" id="podwieczorek">
+		  <div data-role="header">
+			<h1>Podwieczorek</h1>
+				<a href="#foods" data-icon="arrow-l" data-iconpos="notext" data-theme="b">Start</a>
+				<p>Sposób przygotowania: Paprykę, pomidora i ogórka pokroić. Dodać kukurydzę, przyprawy i jogurt. Wymieszać. Sałatkę jeść z kabanosem i pieczywem z masłem. Chleb posmarować masłem.</p>
+		  </div>
+		  <div data-role="main" class="ui-content">	
+		  <table data-role="table" data-mode="columntoggle" id="pricestable" class="ui-responsive table-stripe ui-table" data-column-btn-text="Wybierz kolumny">
+						<tr>
+						<th data-priority="1">16:00 Posiłek IV</th>
+                        <th data-priority="1">Gramy</th>
+                        <th data-priority="2">Sztuki</th>
+       				</tr>
+     			</thead>
+                <tbody>
+                	<tr>
+                        <td>Kabanosy drobiowe</td>
+                        <td>45 g</td>
+                        <td>1 sztuka</td>
+                    </tr>
+                    <tr>
+                        <td>Papryka czerwona</td>
+                        <td>60g</td>
+                        <td>1/2 małej sztuki</td>
+					</tr>
+					<tr>
+                        <td>Ogórek</td>
+                        <td>50g</td>
+                        <td>1 mała sztuka</td>
+					</tr>
+					<tr>
+                        <td>Pomidor</td>
+                        <td>60g</td>
+                        <td>1 mała sztuka</td>
+					</tr>
+					<tr>
+                        <td>Kukurydza konserwowa</td>
+                        <td>30g</td>
+                        <td>2 łyżki</td>
+					</tr>
+					<tr>
+                        <td>Pieprz czarny mielony</td>
+                        <td>2g</td>
+                        <td>szczypta</td>
+					</tr>
+					<tr>
+                        <td>Sól</td>
+                        <td>2g</td>
+                        <td>szczypta</td>
+					</tr>
+					<tr>
+                        <td>Chleb graham</td>
+                        <td>60g</td>
+                        <td>2 kromki</td>
+					</tr>
+					<tr>
+                        <td>Masło</td>
+                        <td>5g</td>
+                        <td>1 łyżeczka</td>
+					</tr>
+					<tr>
+                        <td>Jabłko</td>
+                        <td>160g</td>
+                        <td>1 średnia sztuka</td>
+					</tr>
+				</table>		
+		  </div>
+		  </div>
+		  <div data-role="page" id="kolacja">
+		  <div data-role="header">
+			<h1>Kolacja</h1>
+				<a href="#foods" data-icon="arrow-l" data-iconpos="notext" data-theme="b">Start</a>
+				<p>Sposób przygotowania: Łososia rozdrobnić. Cebulę i ogórki pokroić w drobną kostkę. Przygotowane kapary odsączyć, pokroić i zmieszać z ogórkami. 
+				Na talerzu ułożyć ogórki z kaparami, na to łososia wymieszanego z sokiem z cytryny, oliwą i pieprzem, a dookoła posiekaną cebulę. Wstawić do lodówki na około pół godziny.Podawać z chlebem graham.</p>
+		  </div>
+		  <div data-role="main" class="ui-content">	
+		  <table data-role="table" data-mode="columntoggle" id="pricestable" class="ui-responsive table-stripe ui-table" data-column-btn-text="Wybierz kolumny">
+						<tr>
+						<th data-priority="1">19:00 Posiłek V</th>
+                        <th data-priority="1">Gramy</th>
+                        <th data-priority="2">Sztuki</th>
+       				</tr>
+     			</thead>
+                <tbody>
+                	<tr>
+                        <td>Łosoś wędzony</td>
+                        <td>50 g</td>
+                        <td>1/2 sztuki</td>
+                    </tr>
+                    <tr>
+                        <td>Cebula</td>
+                        <td>25g</td>
+                        <td>1/2 małej sztuki</td>
+					</tr>
+					<tr>
+                        <td>Ogórek konserwowy</td>
+                        <td>100g</td>
+                        <td>2 sztuki</td>
+					</tr>
+					<tr>
+                        <td>Kapary z puszki</td>
+                        <td>10g</td>
+                        <td>1 łyżka</td>
+					</tr>
+					<tr>
+                        <td>Sok z cytryny</td>
+                        <td>10g</td>
+                        <td>1 łyżka</td>
+					</tr>
+					<tr>
+                        <td>Pieprz czarny mielony</td>
+                        <td>2g</td>
+                        <td>szczypta</td>
+					</tr>
+					<tr>
+                        <td>Chleb graham</td>
+                        <td>60g</td>
+                        <td>2 kromki</td>
+					</tr>
+					<tr>
+                        <td>Kiwi</td>
+                        <td>60g</td>
+                        <td>1 sztuka</td>
+					</tr>
+					<tr>
+                        <td>Oliwa z oliwek</td>
+                        <td>5g</td>
+                        <td>1 łyżka</td>
+					</tr>
+				</table>		
+		  </div>
+		  </div>
+		  
+		  
+
+		
 		
 		<!-- My app Postepy page -->
 		<div data-role="page" id="progress">
@@ -756,7 +1142,9 @@
 		  </div>
 		  <div data-role="main" class="ui-content">	
 
-		  
+		  <a href="#" class="button button-fill button-raised color-cyan" data-role="button" id="photo">Zrób zdjęcie</a>
+		  <p><a href="#" class="button button-fill button-raised color-cyan" id="photo">Zrób zdjęcie</a></p>
+
 		  
 		  </div>
         <div data-role="footer" data-position="fixed">
@@ -769,7 +1157,7 @@
                 </ul>
             </div>
         </div>
-		</div> 				
+		</div> 	
 		
     <!--  Informacje o autorach  -->
     
@@ -786,6 +1174,6 @@
         </div>
         
     </div>
-		
+	
 	</body>
 </html>

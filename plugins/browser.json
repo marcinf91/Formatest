@@ -12,7 +12,26 @@
         },
         "cordova-plugin-dialogs": {
             "PACKAGE_NAME": "TwojaFormarma"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "TwojaFormarma"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "TwojaFormarma"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "TwojaFormarma"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "TwojaFormarma"
+        },
+        "cordova.plugins.diagnostic": {
+            "PACKAGE_NAME": "TwojaFormarma"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "TwojaFormarma"
+        }
+    }
 }
