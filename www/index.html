@@ -25,7 +25,7 @@
 			<div data-role="controlgroup" data-type="vertical">
         		<a href="#treningPlan" data-role="button">Plan Treningu</a>
         		<a href="#activity" data-role="button">Aktywności</a>
-        		<a href="#foods" data-role="button">Przykładowe diety</a>
+        		<a href="#foods" data-role="button">Przykładowa dieta</a>
                 <a href="#progress" data-role="button">Postępy</a>
             </div>				
 		  </div>
@@ -207,23 +207,6 @@
 				<a href="#brzuch" data-role="button">Brzuch</a>	 			
 
             </div>	
-			
-			
-			
-			
-		
-			
-			
-			
-			
-			
-			
-
-
-
-
-
-	
 		  </div>
 		</div> 	
 		<!-- Wytrzymałościowy -->
@@ -725,17 +708,385 @@
 		<!-- My app Przypomnienie posilkow page -->
 		<div data-role="page" id="foods">
 		  <div data-role="header">
-			<h1>Przykładowe diety</h1>
+		  <h1>Dieta 2200kcal</h1>
+			<a href="#pageMain" data-icon="home" data-iconpos="notext" data-theme="b">Start</a>
+		  </div>
+		<div data-role="main" class="ui-content">	
+		    <div data-role="controlgroup" data-type="vertical">
+        		<a href="#sniadanie" data-role="button">7:00 Posiłek I</a>
+				<a href="#sniadanie2" data-role="button">10:00 Posiłek II</a>
+				<a href="#obiad" data-role="button">13:00 Posiłek III</a>
+				<a href="#podwieczorek" data-role="button">16:00 Posiłek IV</a>
+				<a href="#kolacja" data-role="button">19:00 Posiłek V</a>
+			</div>
+		</div>
+		</div>
+		<div data-role="page" id="sniadanie">
+		  <div data-role="header">
+			<h1>Śniadanie I</h1>
 				<a href="#pageMain" data-icon="home" data-iconpos="notext" data-theme="b">Start</a>
+				Sposób przygotowania: Pomidora sparzyć, obrać ze skórki. Ogórka obrać i razem z pomidorem drobno pokroić. Ser rozdrobnić widelcem, dodać jogurt,pokrojone warzywa, posiekany koperek i przyprawy.
+				Wszystko wymieszać. Podawać z pieczywem. Łyżeczkę oleju spożyć po posiłku.
 		  </div>
 		  <div data-role="main" class="ui-content">	
+		  <table data-role="table" data-mode="columntoggle" id="pricestable" class="ui-responsive table-stripe ui-table" data-column-btn-text="Wybierz kolumny">
+						<tr>
+						<th data-priority="1">07:00 Posiłek I</th>
+                        <th data-priority="1">Gramy</th>
+                        <th data-priority="2">Sztuki</th>
+       				</tr>
+     			</thead>
+                <tbody>
+                	<tr>
+                        <td>Bułka grahamka</td>
+                        <td>70 g</td>
+                        <td>1 sztuka</td>
 
-			<input type="button" onclick="wyswietl_prompt()" value="Ilość posiłków" />
-			<br /><br />
-			<div id="msg"></div>
-		  
-		  
+                    </tr>
+                    <tr>
+                        <td>Masło</td>
+                        <td>10g</td>
+                        <td>2 łyżeczki</td>
+					</tr>
+					<tr>
+                        <td>Sałata</td>
+                        <td>10g</td>
+                        <td>2 liście</td>
+					</tr>
+					<tr>
+                        <td>Szynka kanapkowa</td>
+                        <td>40g</td>
+                        <td>2 duże plastry</td>
+					</tr>
+					<tr>
+                        <td>Pomidor</td>
+                        <td>60g</td>
+                        <td>1 sztuka</td>
+					</tr>
+					<tr>
+                        <td>Ananas</td>
+                        <td>60g</td>
+                        <td>2 plastry</td>
+					</tr>
+					<tr>
+                        <td>Banan</td>
+                        <td>70g</td>
+                        <td>1/2 łyżeczki</td>
+					</tr>
+					<tr>
+                        <td>Śliwki</td>
+                        <td>40g</td>
+                        <td>2 sztuki</td>
+					</tr>
+					<tr>
+                        <td>Jogurt naturalny 20%</td>
+                        <td>40g</td>
+                        <td>2 łyżeczki</td>
+					</tr>
+					<tr>
+                        <td>Sok z cytryny</td>
+                        <td>5g</td>
+                        <td>1 łyżeczka</td>
+					</tr>
+					<tr>
+                        <td>Miód</td>
+                        <td>5g</td>
+                        <td>1 łyżeczka</td>
+					</tr>
+					<tr>
+                        <td>Otręby owsiane</td>
+                        <td>20g</td>
+                        <td>2 łyżki</td>
+					</tr>
+					<tr>
+                        <td>Przyprawa chili</td>
+                        <td>1g</td>
+                        <td>szczypta</td>
+					</tr>
+				</table>
+						
+						
+			</div>			
 		  </div>
+		  <div data-role="page" id="sniadanie2">
+		  <div data-role="header">
+			<h1>Śniadanie II</h1>
+				<a href="#pageMain" data-icon="home" data-iconpos="notext" data-theme="b">Start</a>
+				Sposób przygotowania: Mięso umyć, osuszyć i lekko rozbić. Oprószyć solą i pieprzem. Do środka włożyć plaster suszonego pomidora i ser, dobrze zwinąć i spiąć wykałaczkami lub związać nitką.
+				Na oliwie obsmażyć mięso ze wszystkich stron, podlać wodą i dusić około 15 minut. 
+				Podawać z ryżem i surówką. Ryż ugotować według przepisu na opakowaniu. Pora umyć i pokroić w talarki. Marchew i jabłko zetrzeć na tarce o dużych oczkach. Dodać jogurt i przyprawy i wszystko wymieszać.
+		  </div>
+		  <div data-role="main" class="ui-content">	
+		  <table data-role="table" data-mode="columntoggle" id="pricestable" class="ui-responsive table-stripe ui-table" data-column-btn-text="Wybierz kolumny">
+						<tr>
+						<th data-priority="1">10:00 Posiłek II</th>
+                        <th data-priority="1">Gramy</th>
+                        <th data-priority="2">Sztuki</th>
+       				</tr>
+     			</thead>
+                <tbody>
+                	<tr>
+                        <td>Ser twarogowy półtłusty</td>
+                        <td>60 g</td>
+                        <td>3 plastry</td>
+                    </tr>
+                    <tr>
+                        <td>Jogurt naturalny 2%</td>
+                        <td>40g</td>
+                        <td>2 płaskie łyżki</td>
+					</tr>
+					<tr>
+                        <td>Pomidor</td>
+                        <td>160g</td>
+                        <td>1 średnia sztuka</td>
+					</tr>
+					<tr>
+                        <td>Ogórek</td>
+                        <td>80g</td>
+                        <td>1 mała sztuka</td>
+					</tr>
+					<tr>
+                        <td>Koper</td>
+                        <td>6g</td>
+                        <td>1 łyżka</td>
+					</tr>
+					<tr>
+                        <td>Pieprz czarny mielony</td>
+                        <td>1g</td>
+                        <td>szczypta</td>
+					</tr>
+					<tr>
+                        <td>Sól</td>
+                        <td>2g</td>
+                        <td>szczypta</td>
+					</tr>
+					<tr>
+                        <td>Chleb chrupki</td>
+                        <td>30g</td>
+                        <td>3 kromki</td>
+					</tr>
+					<tr>
+                        <td>Olej lniany</td>
+                        <td>5g</td>
+                        <td>1 płaska łyżeczka</td>
+					</tr>
+					<tr>
+                        <td>Jabłko</td>
+                        <td>160g</td>
+                        <td>1 sztuka</td>
+					</tr>
+				</table>		
+		  </div>
+		  </div>
+		  <div data-role="page" id="obiad">
+		  <div data-role="header">
+			<h1>Obiad</h1>
+				<a href="#pageMain" data-icon="home" data-iconpos="notext" data-theme="b">Start</a>
+				Sposób przygotowania: Mięso umyć, osuszyć i lekko rozbić. Oprószyć solą i pieprzem. Do środka włożyć plaster suszonego pomidora i ser, dobrze zwinąć i spiąć wykałaczkami lub związać nitką.
+				Na oliwie obsmażyć mięso ze wszystkich stron, podlać wodą i dusić około 15 minut. Podawać z ryżem i surówką.
+				Ryż ugotować według przepisu na opakowaniu. Pora umyć i pokroić w talarki. Marchew i jabłko zetrzeć na tarce o dużych oczkach. Dodać jogurt i przyprawy i wszystko wymieszać.
+		  </div>
+		  <div data-role="main" class="ui-content">	
+		  <table data-role="table" data-mode="columntoggle" id="pricestable" class="ui-responsive table-stripe ui-table" data-column-btn-text="Wybierz kolumny">
+						<tr>
+						<th data-priority="1">13:00 Posiłek III</th>
+                        <th data-priority="1">Gramy</th>
+                        <th data-priority="2">Sztuki</th>
+       				</tr>
+     			</thead>
+                <tbody>
+                	<tr>
+                        <td>Kurczak filet</td>
+                        <td>110 g</td>
+                        <td>1/2 sztuki</td>
+                    </tr>
+                    <tr>
+                        <td>Pomidory suszone</td>
+                        <td>5g</td>
+                        <td>1 plaster</td>
+					</tr>
+					<tr>
+                        <td>Ser Feta</td>
+                        <td>10g</td>
+                        <td>1 kawałek</td>
+					</tr>
+					<tr>
+                        <td>Ryż brązowy</td>
+                        <td>75g</td>
+                        <td>3/4 woreczka</td>
+					</tr>
+					<tr>
+                        <td>Por</td>
+                        <td>50g</td>
+                        <td>1 sztuka</td>
+					</tr>
+					<tr>
+                        <td>Pieprz czarny mielony</td>
+                        <td>2g</td>
+                        <td>szczypta</td>
+					</tr>
+					<tr>
+                        <td>Sól</td>
+                        <td>2g</td>
+                        <td>szczypta</td>
+					</tr>
+					<tr>
+                        <td>Marchew</td>
+                        <td>50g</td>
+                        <td>3 kromki</td>
+					</tr>
+					<tr>
+                        <td>Jabłko</td>
+                        <td>80g</td>
+                        <td>1/2 sztuki</td>
+					</tr>
+					<tr>
+                        <td>Jogurt naturalny 2%</td>
+                        <td>25g</td>
+                        <td>1 łyżka</td>
+					</tr>
+					<tr>
+                        <td>Oliwa z oliwek</td>
+                        <td>10g</td>
+                        <td>1 łyżeczka</td>
+					</tr>
+				</table>		
+		  </div>
+		  </div>
+		  <div data-role="page" id="podwieczorek">
+		  <div data-role="header">
+			<h1>Podwieczorek</h1>
+				<a href="#pageMain" data-icon="home" data-iconpos="notext" data-theme="b">Start</a>
+				Sposób przygotowania: Paprykę, pomidora i ogórka pokroić. Dodać kukurydzę, przyprawy i jogurt. Wymieszać. Sałatkę jeść z kabanosem i pieczywem z masłem. Chleb posmarować masłem.
+		  </div>
+		  <div data-role="main" class="ui-content">	
+		  <table data-role="table" data-mode="columntoggle" id="pricestable" class="ui-responsive table-stripe ui-table" data-column-btn-text="Wybierz kolumny">
+						<tr>
+						<th data-priority="1">16:00 Posiłek IV</th>
+                        <th data-priority="1">Gramy</th>
+                        <th data-priority="2">Sztuki</th>
+       				</tr>
+     			</thead>
+                <tbody>
+                	<tr>
+                        <td>Kabanosy drobiowe</td>
+                        <td>45 g</td>
+                        <td>1 sztuka</td>
+                    </tr>
+                    <tr>
+                        <td>Papryka czerwona</td>
+                        <td>60g</td>
+                        <td>1/2 małej sztuki</td>
+					</tr>
+					<tr>
+                        <td>Ogórek</td>
+                        <td>50g</td>
+                        <td>1 mała sztuka</td>
+					</tr>
+					<tr>
+                        <td>Pomidor</td>
+                        <td>60g</td>
+                        <td>1 mała sztuka</td>
+					</tr>
+					<tr>
+                        <td>Kukurydza konserwowa</td>
+                        <td>30g</td>
+                        <td>2 łyżki</td>
+					</tr>
+					<tr>
+                        <td>Pieprz czarny mielony</td>
+                        <td>2g</td>
+                        <td>szczypta</td>
+					</tr>
+					<tr>
+                        <td>Sól</td>
+                        <td>2g</td>
+                        <td>szczypta</td>
+					</tr>
+					<tr>
+                        <td>Chleb graham</td>
+                        <td>60g</td>
+                        <td>2 kromki</td>
+					</tr>
+					<tr>
+                        <td>Masło</td>
+                        <td>5g</td>
+                        <td>1 łyżeczka</td>
+					</tr>
+					<tr>
+                        <td>Jabłko</td>
+                        <td>160g</td>
+                        <td>1 średnia sztuka</td>
+					</tr>
+				</table>		
+		  </div>
+		  </div>
+		  <div data-role="page" id="kolacja">
+		  <div data-role="header">
+			<h1>Kolacja</h1>
+				<a href="#pageMain" data-icon="home" data-iconpos="notext" data-theme="b">Start</a>
+				Sposób przygotowania: Łososia rozdrobnić. Cebulę i ogórki pokroić w drobną kostkę. Przygotowane kapary odsączyć, pokroić i zmieszać z ogórkami. 
+				Na talerzu ułożyć ogórki z kaparami, na to łososia wymieszanego z sokiem z cytryny, oliwą i pieprzem, a dookoła posiekaną cebulę. Wstawić do lodówki na około pół godziny.Podawać z chlebem graham.
+		  </div>
+		  <div data-role="main" class="ui-content">	
+		  <table data-role="table" data-mode="columntoggle" id="pricestable" class="ui-responsive table-stripe ui-table" data-column-btn-text="Wybierz kolumny">
+						<tr>
+						<th data-priority="1">19:00 Posiłek V</th>
+                        <th data-priority="1">Gramy</th>
+                        <th data-priority="2">Sztuki</th>
+       				</tr>
+     			</thead>
+                <tbody>
+                	<tr>
+                        <td>Łosoś wędzony</td>
+                        <td>50 g</td>
+                        <td>1/2 sztuki</td>
+                    </tr>
+                    <tr>
+                        <td>Cebula</td>
+                        <td>25g</td>
+                        <td>1/2 małej sztuki</td>
+					</tr>
+					<tr>
+                        <td>Ogórek konserwowy</td>
+                        <td>100g</td>
+                        <td>2 sztuki</td>
+					</tr>
+					<tr>
+                        <td>Kapary z puszki</td>
+                        <td>10g</td>
+                        <td>1 łyżka</td>
+					</tr>
+					<tr>
+                        <td>Sok z cytryny</td>
+                        <td>10g</td>
+                        <td>1 łyżka</td>
+					</tr>
+					<tr>
+                        <td>Pieprz czarny mielony</td>
+                        <td>2g</td>
+                        <td>szczypta</td>
+					</tr>
+					<tr>
+                        <td>Chleb graham</td>
+                        <td>60g</td>
+                        <td>2 kromki</td>
+					</tr>
+					<tr>
+                        <td>Kiwi</td>
+                        <td>60g</td>
+                        <td>1 sztuka</td>
+					</tr>
+					<tr>
+                        <td>Oliwa z oliwek</td>
+                        <td>5g</td>
+                        <td>1 łyżka</td>
+					</tr>
+				</table>		
+		  </div>
+		  </div>
+		  
+		  
         <div data-role="footer" data-position="fixed">
         	<div data-role="navbar">
             	<ul>
@@ -769,7 +1120,7 @@
                 </ul>
             </div>
         </div>
-		</div> 				
+		</div> 	
 		
     <!--  Informacje o autorach  -->
     
